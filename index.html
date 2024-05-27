@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестування</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Перевірка знання таблиці істинності</h1>
+
+<p>Який логічний елемент описано за допомогою таблиці істинності?</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>X</th>
+            <th>Y</th>
+            <th>XY</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+    </tbody>
+</table>
+
+<label for="logicFunction">Виберіть відповідь із запропонованого списку:</label>
+<select id="logicFunction">
+    <option value="I">Елемент I (кон'юнкція)</option>
+    <option value="ABO">Елемент АБО (диз'юнкція)</option>
+    <option value="XOR">Елемент ВИКЛЮЧАЮЧЕ АБО (нерівнозначність)</option>
+    <option value="NOR">Елемент АБО-НЕ (стрілка Пірса)</option>
+    <option value="NAND">Елемент I-НЕ (штрих Шеффера)</option>
+    <option value="XNOR">Елемент ВИКЛЮЧАЮЧЕ АБО-НЕ (рівнозначність)</option>
+</select>
+
+<button ondblclick="checkAnswer()">Перевірити</button>
+
+<p id="result"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
